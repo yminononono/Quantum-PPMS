@@ -4,7 +4,10 @@
 Before running the script, use the following command to install some python packages.
 
 ```
-pip install -r requirements.txt  
+# Install locally
+$ pip install -r requirements.txt
+# Install in conda environment
+$ conda install --yes --file requirements.txt 
 ```
 
 Now you should be able to run the following script.
