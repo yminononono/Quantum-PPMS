@@ -1,0 +1,4 @@
+
+Resistance field-continupus-scan only SMU only (+-)average
+
+SMU-V(+)	SMU-V(-)	SMU-V(+-)/ABS	SMU-I(+)	SMU-I(-)	SMU-I(+-)/ABS	temp-ch1 (K)	EX. temp-ch1(K)	magnetic Field-ch1 (Oe)	DMM-2700-CH1(+)	DMM-2700-CH1(-)	DMM-2700-CH1(+-)	R(+-)-2700-CH1	N/A	N/A	N/A	DMM-2182-CH1(+)	DMM-2182-CH1(-)	DMM-2182-CH1(+-)/ABS	R(+-)-2182-CH2	temp-ch3 (K)	EX. temp-ch3(K)	magnetic Field-ch3 (Oe)	DMM-2700-CH3(+)	DMM-2700-CH3(-)	DMM-2700-CH3(+-)	R(+-)-2700-CH3	N/A	N/A	N/A	DMM-2182-CH3(+)	DMM-2182-CH3(-)	DMM-2182-CH3(+-)/ABS	R(+-)-2182-CH3	temp-ch5 (K)	EX. temp-ch5(K)	magnetic Field-ch5 (Oe)	DMM-CH5(+)	DMM-CH5(-)	DMM-CH5(+-)	R(+-)-CH5	temp-ch6 (K)	EX. temp-ch6(K)	magnetic Field-ch6 (Oe)	DMM-CH6(+)	DMM-CH6(-)	DMM-CH6(+-)	R(+-)-CH6	Time(sec)

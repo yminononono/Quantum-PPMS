@@ -1,0 +1,17 @@
+'2024-10-22' :
+       # file_path : '2024-10-22/KUHEP_241022_Nb_Al_3K_10K_v1_sequence_0-0-0-0.0001.txt'
+       # file_path : '2024-10-22/KUHEP_241022_Nb_Al_10K_300K_v2_sequence_0-0-0-0.0001.txt'
+       # file_path : '2024-10-22/KUHEP_241022_Nb_Al_7p4K_8p0K_v2_sequence_0-0-0-0.0001.txt'
+       # file_path : '2024-10-22/KUHEP_241022_Nb_Al_7K_10K_v1_sequence_0-0-0-0.0001.txt'
+       # file_path : '2024-10-22/KUHEP_241022_Nb_Al_8p1K_9p2K_v1_sequence_0-0-0-0.0001.txt'
+       file_path : '2024-10-22/KUHEP_241022_Nb_Al_8p7K_9p0K_v2_sequence_0-0-0-0.0001.txt'
+       label :
+       - 'Al (100 nm) + Nb (20 nm)'
+       - 'Al (20 nm)  + Nb (100 nm)'
+       - 'Al (100 nm) + Nb (100 nm)'
+'2024-12-26' :
+       # file_path : '2024-12-26/20241226_2K_10K-sequence 0-0-0-0.001'
+       file_path : '2024-12-26/20241226_5K_15K-sequence 0-0-0-0.001'
+       label :
+       - 'Al (100 nm) + Nb (50 nm) EPFL'
+       - 'Nb (150 nm) EPFL'

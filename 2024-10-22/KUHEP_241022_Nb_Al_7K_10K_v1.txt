@@ -1,0 +1,12 @@
+2024/10/22	15:44
+
+
+Sequence number :0
+Resistance 2-DMM	field scan
+Resistance temp-continupus-scan only SMU only (+-)average
+source level  ::  100.000000E-6
+file name :
+C:\Users\Optiplex 7040-2\Desktop\2024_1022Rxx\KUHEP_241022_Nb_Al_7K_10K_v1-sequence 0-0-0-0.0001
+
+Sequence number :1
+	
