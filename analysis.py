@@ -8,28 +8,24 @@ xlim = [8, 10]
 scale_y = 1.1
 key = '2024-12-26'
 
+
 with open('data.yaml', 'r') as yml:
     data_info = yaml.safe_load(yml)
 
 file_path = data_info[key]["file_path"]
 label = data_info[key]["label"]
 ncol = len(label)
-
-columns = [
-    "SMU-V(+)", "SMU-V(-)",
-    "SMU-V(+-)/ABS", "SMU-I(+)", "SMU-I(-)", "SMU-I(+-)/ABS",
-    "temp-ch1 (K)", "EX. temp-ch1(K)", "magnetic Field-ch1 (Oe)", "2700-CH1(+)", "2700-CH1(-)", "2700-CH1(+-)",
-    "R(+-)-2700-CH1", "Unused1", "Unused2", "Unused3", "DMM-2182-CH1(+)", "DMM-2182-CH1(-)", "DMM-2182-CH1(+-)/ABS",
-    "R(+-)-2182-CH1", "temp-ch3 (K)", "EX. temp-ch3(K)", "magnetic Field-ch3 (Oe)", "2700-CH3(+)", "2700-CH3(-)", 
-    "2700-CH3(+-)", "R(+-)-2700-CH3", "Unused4", "Unused5", "Unused6", "DMM-2182-CH4(+)", "DMM-2182-CH4(-)", 
-    "DMM-2182-CH4(+-)/ABS", "R(+-)-2182-CH4", "temp-ch5 (K)", "EX. temp-ch5(K)", "magnetic Field-ch5 (Oe)", 
-    "DMM-CH5(+)", "DMM-CH5(-)", "DMM-CH5(+-)", "R(+-)-CH5", "temp-ch6 (K)", "EX. temp-ch6(K)", "magnetic Field-ch6 (Oe)",
-    "DMM-CH6(+)", "DMM-CH6(-)", "DMM-CH6(+-)", "R(+-)-CH6", "Time(sec)",
-]
+columns = data_info['columns']
 
 # Need to specify number of columns in usecols since number of columns in the header and data rows differ !!
 # There are two additional columns in the data rows and the first two columns will be ignored without specifying the number of columns
-data = pd.read_csv(file_path, sep='\t', skiprows=3, usecols=range( len(columns) )) 
+# Two ways to fix this
+
+# Store column info in data.yaml and get the number of columns
+# data = pd.read_csv(file_path, sep='\t', skiprows=3, usecols=range( len(columns) )) 
+# Get number of columns in the header and reread the data using the number of columns
+data = pd.read_csv(file_path, sep='\t', skiprows=3)
+data = pd.read_csv(file_path, sep='\t', skiprows=3, usecols=range( len(data.columns) )) 
 
 # Set Seaborn style
 # sns.set(style="whitegrid")
@@ -50,19 +46,7 @@ Resist = [
     'R(+-)-2700-CH3'
 ]
 
-## Values are not stored in the correct keys...
-## The first two columns are ignored
-# print(data.columns)
-# data.columns = columns[:len(data.columns)]
-
-# Temperature = 'SMU-I(-)'
-# Resist = [
-#     '2700-CH1(-)',
-#     'DMM-2182-CH1(-)',
-#     '2700-CH3(-)'
-# ]
-
-# Preview the first few rows of the data
+# Preview data in the first row
 print(data.head(1).iloc[0])
 
 # Plot multiple channels

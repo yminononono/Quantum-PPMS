@@ -1,3 +1,18 @@
+
+## Plot Temperature vs Resistance
+
+Before running the script, use the following command to install some python packages.
+
+```
+pip install -r requirements.txt  
+```
+
+Now you should be able to run the following script.
+
+```
+python analysis.py
+```
+
 ## User configuration
 
 The file path and sample information are configured in data.yaml
