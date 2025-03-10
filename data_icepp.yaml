@@ -1,0 +1,44 @@
+'2025-03-07' :
+       file_path :
+       - 'icepp/250307-ch1Nb100-ch2Nb150-ch3NbAl.dat'
+       - 'icepp/250307-ch1Nb100-ch2Nb150-ch3NbAl_fineUp1.dat'
+       - 'icepp/250307-ch1Nb100-ch2Nb150-ch3NbAl_fineUp2.dat'
+       - 'icepp/250307-ch1Nb100-ch2Nb150-ch3NbAl_fineUp3.dat'
+       - 'icepp/250307-ch1Nb100-ch2Nb150-ch3NbAl_fineUp4.dat'                     
+       label :
+       - 'Nb (100 nm) @Nanohub'
+       - 'Nb (150 nm) @EPFL'
+       - 'Al (30 nm) + Nb (100 nm) @Nanohub'
+
+
+'2025-03-08' :
+       file_path :
+       - 'icepp/250308-ch1Nb50Al100-ch2Nb100Al20-ch3Nb100Al100.dat'
+       - 'icepp/250308-ch1Nb50Al100-ch2Nb100Al20-ch3Nb100Al100_fineUp1.dat'
+       - 'icepp/250308-ch1Nb50Al100-ch2Nb100Al20-ch3Nb100Al100_fineUp2.dat'
+       - 'icepp/250308-ch1Nb50Al100-ch2Nb100Al20-ch3Nb100Al100_coarseUp1.dat'
+       label :
+       - 'Al (100 nm) + Nb (50 nm) @EPFL'
+       - 'Al (20 nm)  + Nb (100 nm) @EPFL'
+       - 'Al (100 nm) + Nb (100 nm) @EPFL'
+
+'250308_3D_mh_photolitho' :
+       file_path :
+       - 'icepp/250308_3D_mh_photolitho.dat'
+       - 'icepp/250308_3D_mh_photolitho_fineUp1.dat'
+       - 'icepp/250308_3D_mh_photolitho_fineUp2.dat'
+       - 'icepp/250308_3D_mh_photolitho_coarseUp1.dat'       
+       label :
+       - 'Bilayer transmon (Resist : 1 um)'
+       - 'Bilayer transmon (Resist : 1 um)'
+       - 'Bilayer transmon (Resist : 1 um)'
+
+'250309_3D_mh_photolitho' :
+       file_path :
+       - 'icepp/250309_3D_mh_photolitho_fineDown1.dat'
+       - 'icepp/250309_3D_mh_photolitho_fineUp1.dat'
+       - 'icepp/250309_3D_mh_photolitho_coarseUp1.dat'       
+       label :
+       - 'Bilayer transmon (Resist : 2 um)'
+       - 'Bilayer transmon (Resist : 2 um)'
+       - 'Bilayer transmon (Resist : 2 um)'       

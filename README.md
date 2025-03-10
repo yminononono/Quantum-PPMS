@@ -6,7 +6,9 @@ Before running the script, use the following command to install some python pack
 ```
 # Install locally
 $ pip install -r requirements.txt
-# Install in conda environment
+# Activate conda and install in conda environment
+$ conda create -n ppms python=3.11
+$ conda activate ppms
 $ conda install --yes --file requirements.txt 
 ```
 

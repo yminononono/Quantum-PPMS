@@ -11,8 +11,8 @@
        - 'Al (100 nm) + Nb (100 nm)'
 
 '2024-12-26' :
-       # file_path : '2024-12-26/20241226_2K_10K-sequence 0-0-0-0.001'
-       file_path : '2024-12-26/20241226_5K_15K-sequence 0-0-0-0.001'
+       file_path : '2024-12-26/20241226_2K_10K-sequence 0-0-0-0.001'
+       # file_path : '2024-12-26/20241226_5K_15K-sequence 0-0-0-0.001'
        label :
        - 'Al (100 nm) + Nb (50 nm) EPFL'
        - 'Nb (150 nm) EPFL'

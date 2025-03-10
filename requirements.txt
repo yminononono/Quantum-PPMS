@@ -1,3 +1,5 @@
 seaborn
 pandas
 matplotlib
+pyyaml
+inquirerpy

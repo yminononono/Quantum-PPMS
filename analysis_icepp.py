@@ -3,27 +3,47 @@ import pandas as pd
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 import yaml
+from InquirerPy import prompt
+from InquirerPy.separator import Separator
 
-XValue = 'temp-ch1 (K)'
+XValue = 'Temperature (K)'
 # XValue = 'Time(sec)'
 YValue = [
-    'R(+-)-2700-CH1',
-    'R(+-)-2182-CH1',
-    'R(+-)-2700-CH3'
+    'Bridge 1 Resistivity (Ohm)',
+    'Bridge 2 Resistivity (Ohm)',
+    'Bridge 3 Resistivity (Ohm)'
 ]
 
 # xlim = [8, 10]
 xlim = False
 scale_y = 1.1
-key = '2024-12-26'
 
-with open('data.yaml', 'r') as yml:
+with open('data_icepp.yaml', 'r') as yml:
     data_info = yaml.safe_load(yml)
 
-file_path = data_info[key]["file_path"]
+questions = [
+    {
+        "type": "list",
+        "message": "Select data:",
+        "choices": data_info.keys(),
+        "default": None,
+    },
+]
+
+key = prompt(questions=questions)[0]
+
+questions = [
+    {
+        "type": "list",
+        "message": "Select file:",
+        "choices": data_info[key]["file_path"],
+        "default": None,
+    },
+]
+
+file_path = prompt(questions=questions)[0]
 label = data_info[key]["label"]
 ncol = len(label)
-columns = data_info['columns']
 
 # Need to specify number of columns in usecols since number of columns in the header and data rows differ !!
 # There are two additional columns in the data rows and the first two columns will be ignored without specifying the number of columns
@@ -32,8 +52,15 @@ columns = data_info['columns']
 # Store column info in data.yaml and get the number of columns
 # data = pd.read_csv(file_path, sep='\t', skiprows=3, usecols=range( len(columns) )) 
 # Get number of columns in the header and reread the data using the number of columns
-data = pd.read_csv(file_path, sep='\t', skiprows=3)
-data = pd.read_csv(file_path, sep='\t', skiprows=3, usecols=range( len(data.columns) )) 
+with open(file_path, "r") as f:
+    lines = f.readlines()
+# Find [Data] and get row number
+title = ""
+for line in lines:
+    if "TITLE" in line:
+        title = line.split(",")[1].strip("\n\t\r")
+data_start = next(i for i, line in enumerate(lines) if line.strip() == "[Data]") + 1
+data = pd.read_csv(file_path, sep=',', skiprows= data_start)
 
 # Set Seaborn style
 # sns.set(style="whitegrid")
@@ -49,10 +76,11 @@ color = [
 
 
 # Preview data in the first row
-print(data.head(1).iloc[0])
+# print(data.head(1).iloc[0])
 
 # Plot multiple channels
 fig, axs = plt.subplots(1, ncol, figsize=(4 * ncol, 4), sharex=True)
+fig.suptitle(title)
 
 for i in range( ncol ):
     # Plot Resistance vs Temperature
@@ -73,5 +101,6 @@ for i in range( ncol ):
     axs[i].set_title('Resistance vs Temperature')
 
 plt.tight_layout()
-plt.savefig('plots/' + key + '.png')
+plt.subplots_adjust(top=0.85)
+plt.savefig('plots/icepp/' + key + '.png')
 plt.show()
