@@ -12,7 +12,7 @@ $ conda activate ppms
 $ conda install --yes --file requirements.txt 
 ```
 
-Now you should be able to run the following script.
+Now you should be able to run the following script in each directory.
 
 ```
 python analysis.py
@@ -20,7 +20,7 @@ python analysis.py
 
 ## User configuration
 
-The file path and sample information are configured in data.yaml
+The file path and sample information are configured in data.yaml in the yaml directory.
 
 ## Sample information
 
