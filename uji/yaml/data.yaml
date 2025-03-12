@@ -28,3 +28,17 @@
        - 'R(+-)-2700-CH1'
        - 'R(+-)-2182-CH1'
 
+
+'2025-03-11' :
+       file_path :
+       - '20250311_300K_2K-sequence 0-0-0-0.0005'
+       - '20250311_5K_10K-sequence 0-0-0-0.0005'
+       label :
+       - 'Al (100 nm) + Nb (20  nm) EPFL'
+       - 'Al (100 nm) + Nb (100 nm) EPFL'
+       - 'Al (20  nm) + Nb (100 nm) EPFL'       
+       xvalue : 'temp-ch1 (K)'
+       yvalue :
+       - 'R(+-)-2700-CH1'
+       - 'R(+-)-2182-CH1'
+       - 'R(+-)-2700-CH3'

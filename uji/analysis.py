@@ -33,7 +33,7 @@ questions = [
     },
 ]
 
-file_path = os.path.join('data', prompt(questions=questions)[0])
+file_path = os.path.join('data', key, prompt(questions=questions)[0])
 label = data_info[key]["label"]
 ncol = len(label)
 
