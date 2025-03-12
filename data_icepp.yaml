@@ -4,12 +4,19 @@
        - 'icepp/250307-ch1Nb100-ch2Nb150-ch3NbAl_fineUp1.dat'
        - 'icepp/250307-ch1Nb100-ch2Nb150-ch3NbAl_fineUp2.dat'
        - 'icepp/250307-ch1Nb100-ch2Nb150-ch3NbAl_fineUp3.dat'
-       - 'icepp/250307-ch1Nb100-ch2Nb150-ch3NbAl_fineUp4.dat'                     
+       - 'icepp/250307-ch1Nb100-ch2Nb150-ch3NbAl_fineUp4.dat'  
        label :
        - 'Nb (100 nm) @Nanohub'
        - 'Nb (150 nm) @EPFL'
        - 'Al (30 nm) + Nb (100 nm) @Nanohub'
-
+       xvalue : 'Temperature (K)'
+       yvalue :
+       - 'Bridge 1 Resistivity (Ohm)'
+       - 'Bridge 2 Resistivity (Ohm)'
+       - 'Bridge 3 Resistivity (Ohm)'
+       xlabel : 'Temperature (K)'
+       ylabel : 'Resistivity (Ohm)'
+       title : 'Resistance vs Temperature'
 
 '2025-03-08' :
        file_path :
@@ -21,6 +28,14 @@
        - 'Al (100 nm) + Nb (50 nm) @EPFL'
        - 'Al (20 nm)  + Nb (100 nm) @EPFL'
        - 'Al (100 nm) + Nb (100 nm) @EPFL'
+       xvalue : 'Temperature (K)'
+       yvalue :
+       - 'Bridge 1 Resistivity (Ohm)'
+       - 'Bridge 2 Resistivity (Ohm)'
+       - 'Bridge 3 Resistivity (Ohm)'
+       xlabel : 'Temperature (K)'
+       ylabel : 'Resistivity (Ohm)'
+       title : 'Resistance vs Temperature'
 
 '250308_3D_mh_photolitho' :
        file_path :
@@ -32,6 +47,14 @@
        - 'Bilayer transmon (Resist : 1 um)'
        - 'Bilayer transmon (Resist : 1 um)'
        - 'Bilayer transmon (Resist : 1 um)'
+       xvalue : 'Temperature (K)'
+       yvalue :
+       - 'Bridge 1 Resistivity (Ohm)'
+       - 'Bridge 2 Resistivity (Ohm)'
+       - 'Bridge 3 Resistivity (Ohm)'
+       xlabel : 'Temperature (K)'
+       ylabel : 'Resistivity (Ohm)'
+       title : 'Resistance vs Temperature'
 
 '250309_3D_mh_photolitho' :
        file_path :
@@ -41,4 +64,63 @@
        label :
        - 'Bilayer transmon (Resist : 2 um)'
        - 'Bilayer transmon (Resist : 2 um)'
-       - 'Bilayer transmon (Resist : 2 um)'       
+       - 'Bilayer transmon (Resist : 2 um)'
+       xvalue : 'Temperature (K)'
+       yvalue :
+       - 'Bridge 1 Resistivity (Ohm)'
+       - 'Bridge 2 Resistivity (Ohm)'
+       - 'Bridge 3 Resistivity (Ohm)'
+       xlabel : 'Temperature (K)'
+       ylabel : 'Resistivity (Ohm)'
+       title : 'Resistance vs Temperature'
+
+'250308_3D_mh_photolitho_IV' :
+       file_path :
+       - 'icepp/250308_3D_mh_photolitho_IV1.dat'
+       - 'icepp/250308_3D_mh_photolitho_IV2.dat'
+       - 'icepp/250308_3D_mh_photolitho_IV3.dat'
+       - 'icepp/250308_3D_mh_photolitho_IV4.dat'
+       # - 'icepp/250308_3D_mh_photolitho_IV5.dat'
+       - 'icepp/250308_3D_mh_photolitho_IV6.dat'
+       - 'icepp/250308_3D_mh_photolitho_IV7.dat'
+       - 'icepp/250308_3D_mh_photolitho_IV_plus_fineUp1.dat'
+       - 'icepp/250308_3D_mh_photolitho_IV_plus_fineDown1.dat'
+       - 'icepp/250308_3D_mh_photolitho_IV_minus_fineUp1.dat'
+       - 'icepp/250308_3D_mh_photolitho_IV_minus_fineDown1.dat'              
+       label :
+       - 'Bilayer transmon (Resist : 1 um)'
+       - 'Bilayer transmon (Resist : 1 um)'
+       - 'Bilayer transmon (Resist : 1 um)'
+       xvalue : 'Bridge 1 Excitation (uA)'
+       yvalue :
+       - 'Bridge 1 Resistivity (Ohm)'
+       - 'Bridge 2 Resistivity (Ohm)'
+       - 'Bridge 3 Resistivity (Ohm)'              
+       xlabel : 'Current (uA)'
+       ylabel : 'Resistivity (Ohm)'
+       title : 'Resistance vs Current'
+
+'250309_3D_mh_photolitho_IV' :
+       file_path :
+       - 'icepp/250309_3D_mh_photolitho_IV1.dat'
+       - 'icepp/250309_3D_mh_photolitho_IV2.dat'
+       - 'icepp/250309_3D_mh_photolitho_IV3.dat'
+       - 'icepp/250309_3D_mh_photolitho_IV4.dat'
+       # - 'icepp/250309_3D_mh_photolitho_IV5.dat'
+       - 'icepp/250309_3D_mh_photolitho_IV6.dat'
+       - 'icepp/250309_3D_mh_photolitho_IV_plus_fineUp1.dat'
+       - 'icepp/250309_3D_mh_photolitho_IV_plus_fineDown1.dat'
+       - 'icepp/250309_3D_mh_photolitho_IV_minus_fineUp1.dat'
+       - 'icepp/250309_3D_mh_photolitho_IV_minus_fineDown1.dat'               
+       label :
+       - 'Bilayer transmon (Resist : 2 um)'
+       - 'Bilayer transmon (Resist : 2 um)'
+       - 'Bilayer transmon (Resist : 2 um)'
+       xvalue : 'Bridge 1 Excitation (uA)'
+       yvalue :
+       - 'Bridge 1 Resistivity (Ohm)'
+       - 'Bridge 2 Resistivity (Ohm)'
+       - 'Bridge 3 Resistivity (Ohm)'
+       xlabel : 'Current (uA)'
+       ylabel : 'Resistivity (Ohm)'
+       title : 'Resistance vs Current' 

@@ -6,14 +6,6 @@ import yaml
 from InquirerPy import prompt
 from InquirerPy.separator import Separator
 
-XValue = 'Temperature (K)'
-# XValue = 'Time(sec)'
-YValue = [
-    'Bridge 1 Resistivity (Ohm)',
-    'Bridge 2 Resistivity (Ohm)',
-    'Bridge 3 Resistivity (Ohm)'
-]
-
 # xlim = [8, 10]
 xlim = False
 scale_y = 1.1
@@ -44,6 +36,10 @@ questions = [
 file_path = prompt(questions=questions)[0]
 label = data_info[key]["label"]
 ncol = len(label)
+
+
+XValue = data_info[key]["xvalue"]
+YValue = data_info[key]["yvalue"]
 
 # Need to specify number of columns in usecols since number of columns in the header and data rows differ !!
 # There are two additional columns in the data rows and the first two columns will be ignored without specifying the number of columns
@@ -95,10 +91,10 @@ for i in range( ncol ):
     axs[i].grid(which='minor', color='w', linewidth=0.5)
     if xlim:
         axs[i].set_xlim(xlim[0], xlim[1])
-    axs[i].set_xlabel('Temperature (K)')
-    axs[i].set_ylabel('Resistance (Ohm)')
+    axs[i].set_xlabel( data_info[key]["xlabel"] )
+    axs[i].set_ylabel( data_info[key]["ylabel"] )
     axs[i].legend(fontsize = 10)
-    axs[i].set_title('Resistance vs Temperature')
+    axs[i].set_title( data_info[key]["title"] )
 
 plt.tight_layout()
 plt.subplots_adjust(top=0.85)
