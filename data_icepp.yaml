@@ -93,12 +93,12 @@
        - 'Bilayer transmon (Resist : 1 um)'
        xvalue : 'Bridge 1 Excitation (uA)'
        yvalue :
-       - 'Bridge 1 Resistivity (Ohm)'
-       - 'Bridge 2 Resistivity (Ohm)'
-       - 'Bridge 3 Resistivity (Ohm)'              
+       - 'Bridge 1 Voltage (uV)'
+       - 'Bridge 2 Voltage (uV)'
+       - 'Bridge 3 Voltage (uV)'              
        xlabel : 'Current (uA)'
-       ylabel : 'Resistivity (Ohm)'
-       title : 'Resistance vs Current'
+       ylabel : 'Voltage (uV)'       
+       title : 'Voltage vs Current'
 
 '250309_3D_mh_photolitho_IV' :
        file_path :
@@ -118,9 +118,9 @@
        - 'Bilayer transmon (Resist : 2 um)'
        xvalue : 'Bridge 1 Excitation (uA)'
        yvalue :
-       - 'Bridge 1 Resistivity (Ohm)'
-       - 'Bridge 2 Resistivity (Ohm)'
-       - 'Bridge 3 Resistivity (Ohm)'
+       - 'Bridge 1 Voltage (uV)'
+       - 'Bridge 2 Voltage (uV)'
+       - 'Bridge 3 Voltage (uV)'       
        xlabel : 'Current (uA)'
-       ylabel : 'Resistivity (Ohm)'
-       title : 'Resistance vs Current' 
+       ylabel : 'Voltage (uV)'
+       title : 'Voltage vs Current' 

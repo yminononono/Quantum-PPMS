@@ -57,6 +57,9 @@ for line in lines:
         title = line.split(",")[1].strip("\n\t\r")
 data_start = next(i for i, line in enumerate(lines) if line.strip() == "[Data]") + 1
 data = pd.read_csv(file_path, sep=',', skiprows= data_start)
+data['Bridge 1 Voltage (uV)'] = data['Bridge 1 Resistivity (Ohm)'] * data['Bridge 1 Excitation (uA)']
+data['Bridge 2 Voltage (uV)'] = data['Bridge 2 Resistivity (Ohm)'] * data['Bridge 2 Excitation (uA)']
+data['Bridge 3 Voltage (uV)'] = data['Bridge 3 Resistivity (Ohm)'] * data['Bridge 3 Excitation (uA)']
 
 # Set Seaborn style
 # sns.set(style="whitegrid")
