@@ -17,23 +17,30 @@ questions = [
     {
         "type": "list",
         "message": "Select data:",
-        "choices": data_info.keys(),
+        "choices": list(data_info.keys()) + [{"name": "Exit", "value": None}],
         "default": None,
     },
 ]
 
 key = prompt(questions=questions)[0]
+if key == None:
+    exit()
 
 questions = [
     {
         "type": "list",
         "message": "Select file:",
-        "choices": data_info[key]["file_path"],
+        "choices": list(data_info[key]["file_path"]) + [{"name": "Exit", "value": None}],
         "default": None,
     },
 ]
 
-file_path = os.path.join("data", prompt(questions=questions)[0])
+fin = prompt(questions=questions)[0]
+if fin == None:
+    exit()
+file_path = os.path.join("data", fin)
+
+    
 label = data_info[key]["label"]
 ncol = len(label)
 

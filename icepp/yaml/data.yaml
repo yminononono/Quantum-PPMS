@@ -123,4 +123,105 @@
        - 'Bridge 3 Voltage (uV)'       
        xlabel : 'Current (uA)'
        ylabel : 'Voltage (uV)'
-       title : 'Voltage vs Current' 
+       title : 'Voltage vs Current'
+
+'2025-03-17-meas01' :
+       file_path :
+       - '250317/250317-ch1Nb20Al100-ch2Nb100Al100-ch3Nb100Al20.dat'
+       - '250317/250317-ch1Nb20Al100-ch2Nb100Al100-ch3Nb100Al20_fineUp1.dat'
+       label :
+       - 'Al (100 nm) + Nb (20 nm) @EPFL'
+       - 'Al (100 nm)  + Nb (100 nm) @EPFL'
+       - 'Al (20 nm) + Nb (100 nm) @EPFL'
+       xvalue : 'Temperature (K)'
+       yvalue :
+       - 'Bridge 1 Resistivity (Ohm)'
+       - 'Bridge 2 Resistivity (Ohm)'
+       - 'Bridge 3 Resistivity (Ohm)'
+       xlabel : 'Temperature (K)'
+       ylabel : 'Resistivity (Ohm)'
+       title : 'Resistance vs Temperature'
+
+'250317_3D_mh_photolitho' :
+       file_path :
+       - '250317/250317_meas02_3D_mh_photolitho.dat'
+       - '250317/250317_meas02_3D_mh_photolitho_fineUp1.dat'
+       label :
+       - 'Bilayer transmon (Resist : 1 um)'
+       - 'Bilayer transmon (Resist : 1 um)'
+       - 'Bilayer transmon (Resist : 1 um)'
+       xvalue : 'Temperature (K)'
+       yvalue :
+       - 'Bridge 1 Resistivity (Ohm)'
+       - 'Bridge 2 Resistivity (Ohm)'
+       - 'Bridge 3 Resistivity (Ohm)'
+       xlabel : 'Temperature (K)'
+       ylabel : 'Resistivity (Ohm)'
+       title : 'Resistance vs Temperature'
+
+'250317_3D_mh_photolitho_IV' :
+       file_path :
+       - '250317/250317_meas02_3D_mh_photolitho_IV1.dat'
+       - '250317/250317_meas02_3D_mh_photolitho_IV2.dat'
+       - '250317/250317_meas02_3D_mh_photolitho_IV_plus_fineUp1.dat'
+       - '250317/250317_meas02_3D_mh_photolitho_IV_plus_fineDown1.dat'
+       - '250317/250317_meas02_3D_mh_photolitho_IV_minus_fineUp1.dat'
+       - '250317/250317_meas02_3D_mh_photolitho_IV_minus_fineDown1.dat'
+       label :
+       - 'Bilayer transmon (Resist : 1 um)'
+       - 'Bilayer transmon (Resist : 1 um)'
+       - 'Bilayer transmon (Resist : 1 um)'
+       xvalue : 'Bridge 1 Excitation (uA)'
+       yvalue :
+       - 'Bridge 1 Voltage (uV)'
+       - 'Bridge 2 Voltage (uV)'
+       - 'Bridge 3 Voltage (uV)'              
+       xlabel : 'Current (uA)'
+       ylabel : 'Voltage (uV)'       
+       title : 'Voltage vs Current'
+
+'250318_3D_mh_photolitho' :
+       file_path :
+       -      name : '298K to 2K (stopped at 7K since measurement was too slow)'
+              value : '250318/250318_meas03_3D_mh_photolitho.dat'
+       -      name : '6K to 2K (very coarse scan with 1K interval)'
+              value : '250318/250318_meas03_3D_mh_photolitho_coarseDown1.dat'
+       -      name : '3K to 5K (fine scan with 0.1K interval)'
+              value : '250318/250318_meas03_3D_mh_photolitho_fineUp1.dat'
+       label :
+       - 'Bilayer transmon (Resist : 1 um)'
+       - 'Bilayer transmon (Resist : 1 um)'
+       - 'Bilayer transmon (Resist : 1 um)'
+       xvalue : 'Temperature (K)'
+       yvalue :
+       - 'Bridge 1 Resistivity (Ohm)'
+       - 'Bridge 2 Resistivity (Ohm)'
+       - 'Bridge 3 Resistivity (Ohm)'
+       xlabel : 'Temperature (K)'
+       ylabel : 'Resistivity (Ohm)'
+       title : 'Resistance vs Temperature'
+
+'250318_3D_mh_photolitho_IV' :
+       file_path :
+       -      name : 'coarse IV scan to find Ic (0.1 uA to 1.0 uA with 0.1 interval & 1.0 uA to 15.0 uA with 1.0 interval)'
+              value : '250318/250318_meas03_3D_mh_photolitho_IV1.dat'
+       -      name : 'IV scan 2 uA to 10 uA (0.1 uA scan)'
+              value : '250318/250318_meas03_3D_mh_photolitho_IV_plus_fineUp1.dat'
+       -      name : 'IV scan 10 uA to 2 uA (0.1 uA scan)'              
+              value : '250318/250318_meas03_3D_mh_photolitho_IV_plus_fineDown1.dat'
+       -      name : 'IV scan -2 uA to -10 uA (0.1 uA scan)'                            
+              value : '250318/250318_meas03_3D_mh_photolitho_IV_minus_fineUp1.dat'
+       -      name : 'IV scan -10 uA to -2 uA (0.1 uA scan)'                                          
+              value : '250318/250318_meas03_3D_mh_photolitho_IV_minus_fineDown1.dat'
+       label :
+       - 'Bilayer transmon (Resist : 1 um)'
+       - 'Bilayer transmon (Resist : 1 um)'
+       - 'Bilayer transmon (Resist : 1 um)'
+       xvalue : 'Bridge 1 Excitation (uA)'
+       yvalue :
+       - 'Bridge 1 Voltage (uV)'
+       - 'Bridge 2 Voltage (uV)'
+       - 'Bridge 3 Voltage (uV)'              
+       xlabel : 'Current (uA)'
+       ylabel : 'Voltage (uV)'       
+       title : 'Voltage vs Current'
